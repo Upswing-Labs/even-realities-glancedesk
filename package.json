@@ -1,0 +1,15 @@
+{
+  "name": "upswing-glancedesk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "GlanceDesk — Even Realities G2 Dual-Track Crypto/DeFi + Telegram Voice HUD with Google Colab Faster-Whisper GPU & $0 Cloudflare Workers Edge",
+  "scripts": {
+    "test": "node --test tests/glancedesk.test.mjs",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "engines": {
+    "node": ">=20.17.0"
+  }
+}

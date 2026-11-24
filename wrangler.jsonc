@@ -1,0 +1,24 @@
+{
+  // GlanceDesk — Even Realities G2 Dual-Track Voice HUD Backend & 576x288 Web Simulator
+  // $0 Cloudflare Workers Free Tier | ZERO hardcoded secrets | TESTNET/PAPER ONLY
+  "name": "upswing-glancedesk",
+  "main": "worker/index.mjs",
+  "compatibility_date": "2026-11-23",
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1
+    }
+  },
+  "vars": {
+    "POLYMARKET_GAMMA_URL": "https://gamma-api.polymarket.com/markets?active=true&closed=false&limit=10",
+    "HYPERLIQUID_TESTNET_URL": "https://api.hyperliquid-testnet.xyz/info",
+    "TELEGRAM_API_BASE": "https://api.telegram.org",
+    "MAX_TRADE_USD": "50",
+    "MAX_DAILY_NOTIONAL_USD": "250",
+    "DEFAULT_PAPER_EQUITY_USD": "2500",
+    // Set via `wrangler secret put COLAB_WHISPER_URL` when your Colab GPU tunnel is live
+    "COLAB_WHISPER_URL": ""
+  }
+}

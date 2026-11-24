@@ -1,0 +1,31 @@
+{
+  "package_id": "io.upswinglabs.glancedesk",
+  "edition": "202601",
+  "name": "GlanceDesk",
+  "version": "1.0.0",
+  "min_app_version": "2.2.10",
+  "min_sdk_version": "0.0.16",
+  "entrypoint": "index.html",
+  "permissions": [
+    {
+      "name": "g2-microphone",
+      "desc": "Captures 16 kHz mono s16le PCM voice commands from the Even G2 4-mic array for hands-free testnet trades and Telegram replies."
+    },
+    {
+      "name": "phone-microphone",
+      "desc": "Fallback microphone capture on the paired phone when the Even G2 glasses microphone is unavailable."
+    },
+    {
+      "name": "network",
+      "desc": "Connects to the GlanceDesk edge API for live Polymarket odds, Hyperliquid Testnet mids, Telegram alpha digests, and Faster-Whisper transcription.",
+      "whitelist": [
+        "https://upswing-glancedesk.workers.dev",
+        "https://gamma-api.polymarket.com",
+        "https://api.hyperliquid-testnet.xyz"
+      ]
+    }
+  ],
+  "supported_languages": [
+    "en"
+  ]
+}
